@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marathon Registration 2022 Form</title>
+</head>
+
+<body>
+    <h1>Istanbul Marathon 2022 Registration</h1>
+    <form action="/submittedform">
+        <div>
+            <label for="First Name">First Name</label>
+            <input type="text" name="First Name" id="First Name" required>
+        </div>
+        <br>
+        <div>
+            <label for="Last Name">Last Name</label>
+            <input type="text" name="Last Name" id="Last Name" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="password">Please enter a password</label>
+            <input type="password" name="password" id="password" minlength="8" maxlength="15">
+            <br>
+            <small>Note: It needs to be minimum of 8 characters and max. 15.</small>
+        </div>
+        <br>
+        <div>
+            <label for="phone">Enter Your Number</label>
+            <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        </div>
+        <br>
+        <div>
+            <label for="age">Please select your age range</label>
+            <select name="age" id="age">
+                <option value="18-25">18-25</option>
+                <option value="25-35">25-35</option>
+                <option value="35-50">35-50</option>
+                <option value="50-65+">50-65+</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="km15"> Short Distance(15km)</label>
+            <input type="radio" name="length" id="km15" value="km15">
+            <br>
+            <label for="km30"> Medium Distance(30km)</label>
+            <input type="radio" name="length" id="km30" value="km30">
+            <br>
+            <label for="km50"> Full Distance(50km)</label>
+            <input type="radio" name="length" id="km50" value="km50">
+        </div>
+        <br>
+        <div>
+            <label for="Additional"> Additional requests</label>
+            <br>
+            <textarea name="Additional" id="Additional" cols="30" rows="10">Please type it here</textarea>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" name="Agreement" id="Agreement">
+            <label for="Agreement">I agree that everything is my responsibility.</label>
+        </div>
+        <br>
+        <button>Submit</button>
+
+</body>
+
+</html>
